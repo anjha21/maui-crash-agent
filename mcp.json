@@ -1,0 +1,26 @@
+{
+  "mcpServers": {
+    "firebase": {
+      "command": "npx",
+      "args": ["-y", "firebase-tools@latest", "experimental:mcp", "--only", "crashlytics"],
+      "comment": "Use this if your MAUI app uses Firebase Crashlytics bindings"
+    },
+    "jira": {
+      "command": "npx",
+      "args": ["-y", "@atlassian/jira-mcp@latest"],
+      "env": {
+        "JIRA_HOST": "https://YOUR_ORG.atlassian.net",
+        "JIRA_EMAIL": "you@company.com",
+        "JIRA_API_TOKEN": "${JIRA_API_TOKEN}",
+        "JIRA_PROJECT_KEY": "YOUR_PROJECT_KEY"
+      }
+    },
+    "github": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-github"],
+      "env": {
+        "GITHUB_PERSONAL_ACCESS_TOKEN": "${GITHUB_TOKEN}"
+      }
+    }
+  }
+}

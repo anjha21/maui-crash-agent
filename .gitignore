@@ -1,0 +1,10 @@
+.env
+firebase-service-account.json
+*.json.key
+jira-draft-*.json
+fix-*.patch
+reports/
+__pycache__/
+*.pyc
+.pytest_cache/
+crash-memory.json

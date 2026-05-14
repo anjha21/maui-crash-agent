@@ -1,0 +1,24 @@
+{
+  "name": "maui-crash-agent",
+  "description": "Automated crash analysis agent for .NET MAUI: fetches crashes from AppCenter/Crashlytics, creates Jira tickets, fixes code, and raises PRs with memory for recurring crashes",
+  "version": "1.0.0",
+  "mcpServers": "./.mcp.json",
+  "author": {
+    "name": "Ankit Jha",
+    "email": "anjha@eg.dk"
+  },
+  "keywords": [
+    "maui",
+    "dotnet",
+    "csharp",
+    "appcenter",
+    "crashlytics",
+    "crash-report",
+    "jira",
+    "github",
+    "automation",
+    "debugging"
+  ],
+  "license": "MIT",
+  "commands": ["./commands/"]
+}
